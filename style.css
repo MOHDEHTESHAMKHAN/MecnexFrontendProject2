@@ -1,0 +1,416 @@
+@font-face {
+    font-family: myfont;
+    src: url(nimbus-sans-l.zip);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+}
+
+#nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding:3vw 10vw;
+    background: #fff;
+}
+
+#nleft{
+    display: flex;
+    gap: 30px;
+}
+
+#nav a{
+    display: inline-block;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+#nav #centeratag{
+    color: rgb(30, 105, 29);
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 15vw;
+    padding: 0 10vw;
+}
+
+#sustain{
+    width: 10vw;
+}
+
+#sustain p{
+    text-transform: capitalize;
+    font-weight: 800;
+    opacity: .5;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+#sustain #susimagewrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 15vw;
+}
+
+#susimagewrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ephemeral{
+    position: relative;
+    width: 30vw;
+    min-height: 42vw;
+    
+}
+
+#ephemeral #headings{
+    position: absolute;
+    top: -15%;
+    left: -20%;
+}
+
+#ephemeral h1{
+    font-size: 6vw;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.4vw;
+}
+
+#ephemeral p{
+    margin-top: 30px;
+    font-size: 1.3vw;
+    letter-spacing: -.07vw;
+    line-height: 1.3;
+    width: 40%;
+}
+
+#ephemeral img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#imgntext{
+    width: fit-content;
+    height: fit-content;
+}
+
+#circlev{
+    display: flex;
+    border: 1px solid #5e5e5e;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    
+}
+
+#circlev i{
+    color: #5e5e5e;
+}
+ 
+
+
+#visit{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 1px;
+    align-items: center;
+    
+}
+
+#visit h3{
+    color: #5e5e5e;
+    font-weight: 400;
+}
+
+#motive{
+    display: flex;
+    margin-top: 7vw;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+
+}
+
+#motive p{
+    line-height: 1.7;
+    letter-spacing: -.12vw;
+    position: relative;
+    right: 0px;
+    width: 85%;
+    text-align: right;
+    font-size: 2.1vw;
+
+}
+
+#motive span{
+    display: inline-block;
+    border-radius: 100px;
+    background-color: aquamarine;
+    margin: 0 13px;
+    margin-bottom: -15px;
+}
+
+#onespan{
+    width: 80px;
+    height: 45px;
+    background-image: url(bluegirl.jpg);
+    background-size: cover;
+    background-position: 0% 60%;
+}
+
+#twospan{
+    width: 130px;
+    height: 60px;
+    background-image: url(shaljam.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+#threespan{
+    width: 80px;
+    height: 45px;
+    background-image: url(grass.jpg);
+    background-size: cover;
+    background-position: 0% 60%;
+}
+
+#pictures{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vw;
+    padding: 3vw;
+    padding-left: 14vw;
+    padding-right: 12vw;
+}
+
+#firstpic{
+    width: 17vw;
+}
+
+#firstpic #picimg{
+    width: 100%;
+    height: 24vw;
+    margin-bottom: 1vw;
+}
+
+#picimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#firstpic h1, #secpic h1{
+    letter-spacing: -.1vw;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+#firstpic p, #secpic p{
+    opacity: .8;
+    font-size: 1vw;
+    letter-spacing: -.05vw;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+#secpic{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#secpic #picimg{
+    width: 100%;
+    height: 37vw;
+    margin-bottom: 1vw;
+}
+
+#secpic p{
+    width: 50%;
+    text-align: right;
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 8vw;
+}
+
+#bimg{
+    width: 65%;
+    height: 60vh;
+    background-color: #916464;
+}
+
+#bimg img{
+    width: 100%;
+    height: 100%;
+    object-position: 0% 70%;
+    object-fit: cover;
+}
+
+#btext{
+    width: 35%;
+    padding: 0% 3vw;
+}
+
+#btext h1{
+    font-size: 2.8vw;
+    font-weight: 400;
+    font-size: 1;
+    letter-spacing: -.15vw;
+}
+
+#btext p{
+    margin-top: 20px;
+    width: 60%;
+    font-size: 1vw;
+}
+
+#future{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+#future video{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#ftext{
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 1vw 2vw;
+    border-radius: 10px;
+}
+
+#ftext button{
+    padding: .8vw 1.7vw;
+    font-size: .6vw;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-weight: 700;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
+    color: #6f6f6f;
+}
+
+
+#visit video{
+    
+    opacity: 1;
+    height: 30%;
+    width: 100%;
+    
+}
+
+
+/* Additional CSS styling for the footer */
+
+/* CSS for the footer */
+
+
+
+.black-footer {
+    background-color: black;
+    opacity: .8;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-icons a:hover {
+    color: #bbb;
+}
+
+/* Copyright text */
+.copyright {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-column ul
+{
+    text-decoration: none;
+}
+
+.copyright p{
+    margin-top: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
